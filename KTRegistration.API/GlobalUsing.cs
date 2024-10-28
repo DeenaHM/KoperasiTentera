@@ -1,0 +1,15 @@
+﻿global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using KTRegistration.API.Helpers;
+global using KTRegistration.Core.Abstractions;
+global using KTRegistration.Core.Entities;
+global using KTRegistration.Infrastructure.Persistence;
+global using Mapster;
+global using MapsterMapper;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.OpenApi.Any;
+global using Microsoft.OpenApi.Interfaces;
+global using Microsoft.OpenApi.Models;
+global using System.Reflection;

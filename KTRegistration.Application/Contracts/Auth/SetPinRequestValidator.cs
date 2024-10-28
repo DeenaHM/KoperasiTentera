@@ -1,7 +1,4 @@
-﻿
-namespace KTRegistration.Core.Contracts.Auth;
-
-
+﻿namespace KTRegistration.Core.Contracts.Auth;
 public class SetPinRequestValidator : AbstractValidator<SetPinRequest>
 {
     public SetPinRequestValidator()

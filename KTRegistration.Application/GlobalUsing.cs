@@ -1,4 +1,5 @@
 ﻿global using FluentValidation;
+global using KTRegistration.Application.Abstractions;
 global using KTRegistration.Core.Abstractions;
 global using KTRegistration.Core.Contracts.Auth;
 global using KTRegistration.Core.Entities;
@@ -14,3 +15,4 @@ global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.Logging;
 global using System.Text.RegularExpressions;
+

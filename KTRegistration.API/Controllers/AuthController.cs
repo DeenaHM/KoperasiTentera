@@ -1,8 +1,4 @@
-﻿
-using KTRegistration.Core.Contracts.Auth;
-using KTRegistration.Core.Services.Auth;
-
-namespace KTRegistration.API.Controllers;
+﻿namespace KTRegistration.API.Controllers;
 
 [Route("[controller]")]
 [ApiController]

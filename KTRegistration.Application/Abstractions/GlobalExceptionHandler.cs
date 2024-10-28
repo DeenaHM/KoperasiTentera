@@ -1,6 +1,4 @@
-﻿
-
-namespace KTRegistration.Core.Abstractions;
+﻿namespace KTRegistration.Core.Abstractions;
 public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IExceptionHandler
 {
     private readonly ILogger<GlobalExceptionHandler> _logger = logger;

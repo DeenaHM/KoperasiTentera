@@ -1,6 +1,4 @@
-﻿using KTRegistration.Application.Abstractions;
-
-public class AuthService : IAuthService
+﻿public class AuthService : IAuthService
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly ILogger<AuthService> _logger;

@@ -1,5 +1,4 @@
-﻿using KTRegistration.Application.Abstractions;
-
+﻿
 namespace KTRegistration.Core.Services.Auth;
 /// <summary>
 /// Interface for authentication and user management services, including registration, verification, and login functionalities.

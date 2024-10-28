@@ -1,7 +1,4 @@
-﻿using KTRegistration.Core.Services.Auth;
-
-namespace KTRegistration.API;
-
+﻿namespace KTRegistration.API;
 public static class DependencyInjection
 {
     public static IServiceCollection AddDependencies(this IServiceCollection services, IConfiguration configuration)
@@ -93,7 +90,7 @@ public static class DependencyInjection
     {
         services
                .AddFluentValidationAutoValidation()
-               .AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()); 
+               .AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
 
         return services;
     }

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace KTRegistration.Core.Entities;
+﻿namespace KTRegistration.Core.Entities;
 public class VerificationCode
 {
     public int Id { get; set; }

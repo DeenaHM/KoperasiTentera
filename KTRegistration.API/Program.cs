@@ -1,4 +1,3 @@
-
 namespace KTRegistration.API;
 
 public class Program

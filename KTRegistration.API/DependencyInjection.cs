@@ -26,7 +26,8 @@ public static class DependencyInjection
                 builder.AllowAnyHeader()
                        .AllowAnyMethod()
                        .AllowCredentials()
-                       .WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>()!);
+                       .WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>()
+                       ??throw new InvalidOperationException("AllowedOrigins in appsettings not found."));
             });
         });
 
@@ -64,12 +65,14 @@ public static class DependencyInjection
                 Description = "API documentation with last update date",
                 Contact = new OpenApiContact
                 {
-                    Name = "Deena Hamouri",
+                    Name = "Deena Hammouri",
                     Email = "Deenahamouri@gmail.com"
                 },
                 Extensions = new Dictionary<string, IOpenApiExtension>
             {
-                { "LastUpdateDate", new OpenApiString("28-10-2024") }
+                { "LastUpdateDate", new OpenApiString("28-10-2024") },
+                { "Environment", new OpenApiString("Development") },
+                { "APIStatus", new OpenApiString("Active") }
             }
             });
         });

@@ -5,7 +5,6 @@ public record Error
     public string Description { get; init; }
     public int StatusCode { get; init; }
 
-    // Constructor لتقبل 3 معاملات
     public Error(string code, string description, int statusCode)
     {
         Code = code;

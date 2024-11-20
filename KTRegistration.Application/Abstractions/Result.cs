@@ -2,7 +2,7 @@
 public class Result
 {
 
-    //internal use ctor
+    
     protected Result(bool isSuccess, Error error)
     {
         if ((isSuccess && error != Error.None) || (!isSuccess && error == Error.None))
